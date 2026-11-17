@@ -1,0 +1,133 @@
+/* SIMBAA v22 admin: compact overview, true accordion sidebar, smaller inline icons */
+body.admin-authenticated .admin-sidebar{width:252px!important;max-width:252px!important;padding:14px 12px calc(16px + env(safe-area-inset-bottom))!important;background:var(--panel)!important}
+body.admin-authenticated .admin-sidebar-head{padding:14px 12px 12px!important}
+.admin-sidebar-brand{gap:9px!important}
+.admin-sidebar-brand img{width:38px!important;height:38px!important;flex-basis:38px!important;border-radius:11px!important}
+.admin-sidebar-brand b{font-size:15px!important}
+.admin-sidebar-caption-top{padding:13px 10px 8px!important;font-size:8px!important;letter-spacing:.13em!important}
+body.admin-authenticated .admin-sidebar .admin-main-nav{display:flex!important;flex-direction:column!important;gap:3px!important}
+body.admin-authenticated .admin-sidebar .admin-main-nav>[data-group]{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:9px!important;min-height:40px!important;height:40px!important;padding:0 9px!important;border-radius:10px!important;font-size:11px!important}
+.admin-sidebar .admin-main-nav button .nav-symbol{display:grid!important;place-items:center!important;width:23px!important;height:23px!important;flex:0 0 23px!important;border-radius:7px!important;background:transparent!important;color:var(--gold)!important;font-size:13px!important}
+.admin-sidebar .admin-main-nav button .nav-symbol svg{display:block!important;width:17px!important;height:17px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.8!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.admin-sidebar .admin-main-nav button.active .nav-symbol{background:rgba(218,171,64,.12)!important;color:var(--gold)!important}
+.admin-sidebar .admin-main-nav button .nav-chevron{margin-left:auto!important;font-size:14px!important;line-height:1!important;transform:none!important}
+.admin-sidebar .admin-main-nav button.active .nav-chevron{transform:rotate(180deg)!important}
+body.admin-authenticated .admin-sidebar .admin-subnav{position:static!important;display:flex!important;flex-direction:column!important;gap:2px!important;width:calc(100% - 31px)!important;margin:-1px 0 5px 31px!important;padding:4px 0 5px 10px!important;border:0!important;border-left:1px solid rgba(214,166,66,.28)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;overflow:visible!important}
+body.admin-authenticated .admin-sidebar .admin-subnav[hidden]{display:none!important}
+body.admin-authenticated .admin-sidebar .admin-subnav button{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:8px!important;width:100%!important;min-height:32px!important;height:auto!important;padding:5px 8px!important;border:1px solid transparent!important;border-radius:8px!important;background:transparent!important;color:var(--muted)!important;font:700 10px 'DM Sans',sans-serif!important;text-align:left!important}
+body.admin-authenticated .admin-sidebar .admin-subnav button:before{display:none!important;content:none!important}
+.admin-sidebar .admin-subnav .subnav-symbol{display:grid!important;place-items:center!important;width:17px!important;height:17px!important;flex:0 0 17px!important;color:var(--gold)!important}
+.admin-sidebar .admin-subnav .subnav-symbol svg{display:block!important;width:15px!important;height:15px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.8!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.admin-sidebar .admin-subnav .subnav-text{display:block!important;min-width:0!important;line-height:1.3!important}
+body.admin-authenticated .admin-sidebar .admin-subnav button.active{background:var(--v22-soft,rgba(214,166,66,.1))!important;border-color:rgba(214,166,66,.2)!important;color:var(--gold)!important}
+.admin-sidebar .admin-subnav button.active .subnav-symbol{color:var(--gold-strong,var(--gold))!important}
+.admin-sidebar-bottom{padding-top:8px!important}
+.admin-sidebar-preferences{gap:5px!important}
+.admin-sidebar-preferences button{min-height:37px!important;font-size:10px!important}
+.admin-sidebar-caption{margin-top:9px!important;font-size:8px!important}
+
+/* Keep Overview useful but short on mobile */
+body.admin-authenticated .admin-heading{padding:13px 0 10px!important;align-items:center!important}
+body.admin-authenticated .admin-heading h1{margin:5px 0!important;font-size:clamp(22px,3vw,29px)!important}
+body.admin-authenticated .admin-heading p{margin:3px 0 0!important;font-size:10px!important}
+body.admin-authenticated .admin-stats{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:7px!important;margin:9px 0 12px!important}
+body.admin-authenticated .admin-stats article{min-width:0!important;padding:9px 10px!important;border-radius:12px!important}
+body.admin-authenticated .admin-stats small{font-size:9px!important}
+body.admin-authenticated .admin-stats b{font-size:19px!important;margin-top:3px!important}
+body.admin-authenticated .admin-stats span{font-size:8px!important}
+body.admin-authenticated .admin-quick-note{margin:7px 0 8px!important;font-size:10px!important}
+body.admin-authenticated .admin-overview-panel{padding:15px!important;border-radius:16px!important}
+body.admin-authenticated .admin-overview-panel .panel-head{margin-bottom:9px!important}
+body.admin-authenticated .admin-overview-panel .panel-head h2{font-size:18px!important}
+body.admin-authenticated .admin-overview-panel .panel-head p{font-size:10px!important}
+body.admin-authenticated .admin-overview-grid.admin-overview-quicklinks{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;margin:10px 0!important}
+body.admin-authenticated .admin-overview-action{display:grid!important;grid-template-columns:27px minmax(0,1fr)!important;grid-template-rows:auto auto!important;gap:3px 8px!important;min-width:0!important;min-height:68px!important;padding:9px!important;border-radius:12px!important;align-items:center!important}
+body.admin-authenticated .admin-overview-action>span{grid-row:1/3!important;width:27px!important;height:27px!important;font-size:15px!important;border-radius:8px!important}
+body.admin-authenticated .admin-overview-action>b{font-size:10px!important;line-height:1.2!important}
+body.admin-authenticated .admin-overview-action>small{font-size:8px!important;line-height:1.35!important;margin-top:0!important}
+body.admin-authenticated .admin-overview-tip{padding:10px 11px!important;border-radius:11px!important}
+body.admin-authenticated .admin-overview-tip p{font-size:9px!important;line-height:1.5!important}
+
+/* Editors and WhatsApp settings */
+body.admin-authenticated .admin-panel{border-radius:15px!important;padding:14px!important}
+body.admin-authenticated .form-wrap{padding:12px!important;border-radius:13px!important}
+body.admin-authenticated .form-grid{gap:9px!important}
+body.admin-authenticated .form-grid label{font-size:10px!important;gap:5px!important}
+body.admin-authenticated .form-grid input,body.admin-authenticated .form-grid select,body.admin-authenticated .form-grid textarea{min-height:37px!important;padding:9px!important;border-radius:9px!important;font-size:11px!important}
+body.admin-authenticated .form-grid textarea{min-height:60px!important}
+body.admin-authenticated .product-editor-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+body.admin-authenticated .product-editor-grid>label:has(textarea),body.admin-authenticated .product-editor-grid>.wide,body.admin-authenticated .product-editor-grid .product-pricing-helper{grid-column:1/-1!important}
+body.admin-authenticated .config-builder-row,body.admin-authenticated .config-builder-item{min-width:0!important}
+body.admin-authenticated #whatsappTemplatesTab .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+body.admin-authenticated #whatsappTemplatesTab .form-grid .wide{grid-column:1/-1!important}
+.template-token-list{display:block;margin-top:6px;padding:8px;border:1px solid var(--line);border-radius:9px;background:var(--panel2);color:var(--gold);font-size:9px;line-height:1.65;overflow-wrap:anywhere}
+.whatsapp-template-preview{max-height:280px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);font:10px/1.65 'DM Sans',sans-serif}
+.template-preview-wrap{margin-top:12px}
+
+@media(max-width:900px){
+  body.admin-authenticated .admin-sidebar{width:min(286px,calc(100vw - 42px))!important;max-width:286px!important;padding:12px 11px calc(14px + env(safe-area-inset-bottom))!important}
+  body.admin-authenticated .admin-sidebar-head{padding:13px 11px 11px!important}
+  body.admin-authenticated .admin-sidebar .admin-main-nav>[data-group]{min-height:38px!important;height:38px!important}
+  body.admin-authenticated .admin-stats{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+}
+@media(max-width:600px){
+  body.admin-authenticated .admin-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  body.admin-authenticated .admin-overview-grid.admin-overview-quicklinks{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  body.admin-authenticated .product-editor-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  body.admin-authenticated .product-editor-grid>label:has(textarea),body.admin-authenticated .product-editor-grid>.wide,body.admin-authenticated .product-editor-grid .product-pricing-helper{grid-column:1/-1!important}
+  body.admin-authenticated #whatsappTemplatesTab .form-grid{grid-template-columns:1fr!important}
+  body.admin-authenticated #whatsappTemplatesTab .form-grid .wide{grid-column:auto!important}
+  body.admin-authenticated .panel-head{gap:9px!important}
+}
+@media(max-width:360px){
+  body.admin-authenticated .admin-overview-grid.admin-overview-quicklinks{grid-template-columns:1fr!important}
+  body.admin-authenticated .product-editor-grid{grid-template-columns:1fr!important}
+  body.admin-authenticated .product-editor-grid>label:has(textarea),body.admin-authenticated .product-editor-grid>.wide,body.admin-authenticated .product-editor-grid .product-pricing-helper{grid-column:auto!important}
+}
+
+
+/* SIMBAA v26 — compact settings subpages and a clean vertical playlist */
+body.admin-authenticated .settings-editor-form{display:grid;gap:13px;padding:15px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,var(--panel),var(--panel2));}
+body.admin-authenticated .settings-editor-form .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;}
+body.admin-authenticated .settings-editor-form label{display:grid;gap:6px;min-width:0;color:var(--muted);font-size:11px;font-weight:800;}
+body.admin-authenticated .settings-editor-form input:not([type=checkbox]):not([type=range]),body.admin-authenticated .settings-editor-form select,body.admin-authenticated .settings-editor-form textarea{width:100%;min-width:0;min-height:42px;border:1px solid var(--line);border-radius:10px;padding:10px 11px;background:var(--field);color:var(--text);font:12px 'DM Sans',sans-serif;}
+body.admin-authenticated .settings-editor-form input[type=color]{width:100%;height:42px;padding:4px;border:1px solid var(--line);border-radius:10px;background:var(--field);}
+body.admin-authenticated .settings-editor-form input[type=range]{width:100%;accent-color:var(--gold);}
+body.admin-authenticated .settings-editor-form textarea{min-height:90px;resize:vertical;line-height:1.55;}
+body.admin-authenticated .settings-editor-form small,body.admin-authenticated .settings-helper{color:var(--muted);font-size:10px;line-height:1.55;font-weight:500;}
+.settings-toggle-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
+.settings-toggle-grid label,.featured-product-option{display:flex!important;align-items:center;gap:8px;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);font-size:10px!important;}
+.settings-toggle-grid input,.featured-product-option input{accent-color:var(--gold);width:16px;height:16px;flex:0 0 auto;}
+.settings-order-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
+.settings-order-grid label{font-size:10px!important;}
+.featured-product-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;max-height:240px;overflow:auto;padding:8px;border:1px solid var(--line);border-radius:12px;background:var(--panel2);}
+.featured-product-option{align-items:flex-start!important;margin:0;}
+.featured-product-option span{display:grid;gap:3px;min-width:0;}
+.featured-product-option b{font-size:10px;color:var(--text);overflow-wrap:anywhere;}
+.featured-product-option small{font-size:9px!important;}
+.settings-preview-strip,.music-starter-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--panel2);}
+.settings-preview-strip>div,.music-starter-head>div{display:grid;gap:4px;}
+.settings-preview-strip small,.music-starter-head small{color:var(--muted);font-size:10px;line-height:1.5;}
+.settings-preview-mark{width:35px;height:35px;display:grid;place-items:center;border-radius:11px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#211604;font-weight:900;}
+.music-input-card{display:grid;gap:11px;padding:12px;border:1px solid var(--line);border-radius:13px;background:var(--panel2);}
+.music-upload-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:end;}
+.music-playlist-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px 0 9px;color:var(--text);font-size:12px;}
+.music-playlist-head small{color:var(--muted);font-size:10px;}
+.admin-music-playlist{display:grid;gap:8px;}
+.admin-music-row{display:grid;grid-template-columns:28px 44px minmax(0,1fr);gap:9px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:13px;background:var(--panel2);}
+.admin-music-index{display:grid;place-items:center;width:26px;height:26px;border-radius:8px;background:rgba(255,189,37,.1);color:var(--gold);font-size:10px;font-weight:900;}
+.admin-music-cover{width:44px;height:44px;overflow:hidden;display:grid;place-items:center;border-radius:10px;background:linear-gradient(145deg,#33220e,#17120d);color:var(--gold);font-size:22px;}
+.admin-music-cover img{width:100%;height:100%;object-fit:cover;}
+.admin-music-info{min-width:0;display:grid;gap:4px;}
+.admin-music-info b{font-size:11px;color:var(--text);overflow-wrap:anywhere;}
+.admin-music-info small{font-size:9px;color:var(--muted);overflow-wrap:anywhere;}
+.admin-music-actions{grid-column:2/-1;display:flex;flex-wrap:wrap;gap:6px;}
+.admin-music-actions button{min-height:31px;padding:6px 9px;border:1px solid var(--line);border-radius:8px;background:var(--field);color:var(--muted);font-size:9px;font-weight:800;}
+.admin-music-actions button:disabled{opacity:.4;cursor:not-allowed;}
+.admin-music-actions button:hover:not(:disabled){border-color:var(--gold);color:var(--gold);}
+.admin-music-actions button.danger{color:#db8270;border-color:rgba(219,130,112,.22);}
+.admin-music-preview-embed{margin-top:10px;padding:10px;border:1px solid var(--line);border-radius:13px;background:#111;}
+.admin-music-preview-embed[hidden]{display:none!important;}
+.admin-music-preview-embed iframe,.admin-music-preview-embed audio{width:100%;max-width:100%;border:0;border-radius:10px;}
+.music-admin-note{display:block;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);color:var(--muted);font-size:10px;line-height:1.6;}
+@media(max-width:620px){body.admin-authenticated .settings-editor-form{padding:11px;}body.admin-authenticated .settings-editor-form .form-grid,.settings-toggle-grid,.featured-product-options{grid-template-columns:1fr;}.settings-order-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.music-upload-row{grid-template-columns:1fr;}.music-upload-row .btn{width:100%;}.music-starter-head{align-items:flex-start;flex-direction:column;}.music-starter-head .btn{width:100%;}.admin-music-actions button{flex:1 1 auto;}.settings-preview-strip{align-items:flex-start;}}

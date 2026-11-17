@@ -1,0 +1,7 @@
+project_id = "npztpcjthdwjawtojmrv"
+
+[functions.simbaa-owner-login]
+verify_jwt = false
+
+[functions.simbaa-review-submit]
+verify_jwt = false
