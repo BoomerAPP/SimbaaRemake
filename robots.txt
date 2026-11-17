@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /Simbaa.html
+Disallow: /admin/
